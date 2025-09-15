@@ -112,9 +112,9 @@ def install(rType="MAIN"):
 def update(rType="MAIN"):
     if rType == "UPDATE":
         printc("Enter the link of release_xyz.zip file:", col.BRIGHT_RED)
-        rlink = input('Example: https://bitbucket.org/xoceunder/x-ui/raw/master/release_22f.zip\n\nNow enter the link:\n\n')
+        rlink = input('Example: https://bitbucket.org/haremmahmud/bmtone/raw/master/release_22f.zip\n\nNow enter the link:\n\n')
     else:
-        rlink = "https://bitbucket.org/xoceunder/x-ui/raw/master/release_22f.zip"
+        rlink = "https://bitbucket.org/haremmahmud/bmtone/raw/master/release_22f.zip"
         printc("Downloading Software Update")  
     os.system('wget -q -O "/tmp/update.zip" "%s"' % rlink)
     if os.path.exists("/tmp/update.zip"):
